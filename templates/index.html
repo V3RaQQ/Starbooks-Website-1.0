@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <title>Order Form</title>
+</head>
+<body>
+    <div id="intro">
+        <img src="{{ url_for('static', filename='STARBOOKS_new.png') }}" alt="Логотип" class="logo">
+    </div>
+
+    <div id="main-content">
+        <div class="clouds-bg"></div>
+        <canvas id="snow-canvas-1"></canvas>
+        <canvas id="snow-canvas-2"></canvas>
+        <canvas id="snow-canvas-3"></canvas>
+        <canvas id="snow-canvas-4"></canvas>
+        <canvas id="snow-canvas-5"></canvas>
+        <canvas id="snow-canvas-6"></canvas>
+
+        <div class="order-form-container">
+            <img src="{{ url_for('static', filename='logo.png') }}" alt="Логотип" class="logo">
+            <h1>Создание заказа</h1>
+            <form id="order-form">
+                <div class="form-group">
+                    <input type="text" name="name" placeholder="Ваше имя" required>
+                </div>
+                <div class="form-group">
+                    <input type="number" name="phone" placeholder="Ваш телефон" required>
+                </div>
+
+                <div class="form-group">
+                    <p>Выберите способ доставки:</p>
+                    <div class="delivery-options">
+                        <input type="radio" id="nova-poshta" name="delivery" value="nova-poshta">
+                        <label for="nova-poshta">Новая Почта</label>
+
+                        <input type="radio" id="ukr-poshta" name="delivery" value="ukr-poshta">
+                        <label for="ukr-poshta">Укр Почта</label>
+
+                        <input type="radio" id="pickup" name="delivery" value="pickup">
+                        <label for="pickup">Самовывоз</label>
+                    </div>
+                </div>
+
+                <div class="form-group hidden" id="address-container">
+                    <label for="department">Введите адрес доставки:</label>
+                    <input type="text" id="department" name="department" placeholder="Номер отделения / Индекс">
+                    <input type="text" id="full_name" name="full_name" placeholder="ФИО">
+                    <input type="text" id="phone_delivery" name="phone_delivery" placeholder="Номер телефона (не обязательно, если вы его уже ввели выше)">
+                    <input type="text" id="city" name="city" placeholder="Город">
+                </div>
+
+                <div class="form-group">
+                    <input type="text" name="details" id="details" placeholder="Детали заказа" required>
+                </div>
+                <button type="submit">Создать заказ</button>
+            </form>
+        </div>
+
+        <footer class="footer-text">
+            StarBooks / 2025 / Все права защищены (но это не точно)<br>
+            Website made by <a href="https://t.me/V3RaQQ">V3RaQQ</a>
+        </footer>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/intro.js') }}" defer></script>
+    <script src="{{ url_for('static', filename='js/main.js') }}" defer></script>
+</body>
+</html>
