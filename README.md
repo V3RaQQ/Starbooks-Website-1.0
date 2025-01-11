@@ -1,6 +1,6 @@
 # Version 1.0
 
-![New Features Overview](https://ibb.co/s3L5P2V)
+!([](https://drive.google.com/file/d/1seM3kCZaQAH0WGYeFOsm5jW0WOsF3LES/view?usp=drive_link))
 
 In Version 2.0, we are introducing a default design and several new features:
 
