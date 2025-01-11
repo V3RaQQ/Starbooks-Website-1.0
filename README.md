@@ -1,5 +1,7 @@
 # Version 1.0
 
+![New Features Overview](https://ibb.co/s3L5P2V)
+
 In Version 2.0, we are introducing a default design and several new features:
 
 - **Accounts**: Manage user profiles and settings.
