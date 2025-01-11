@@ -1,6 +1,4 @@
-# Version 2.0 Update
-
-## New Features
+# Version 1.0
 
 In Version 2.0, we are introducing a default design and several new features:
 
