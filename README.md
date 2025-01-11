@@ -1,6 +1,5 @@
 # Version 1.0
 
-![Description of the image](https://drive.google.com/uc?export=view&id=1seM3kCZaQAH0WGYeFOsm5jW0WOsF3LES)
 
 
 In Version 2.0, we are introducing a default design and several new features:
